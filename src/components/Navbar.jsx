@@ -9,10 +9,10 @@ function Navbar() {
                 <img src={logo} alt="Company" />
             </div>
             <div className="links">
-                <span><a href="#">Home</a></span>
-                <span><a href="#">Services</a></span>
-                <span><a href="#">FAQ</a></span>
-                <span className="btn"><a href="#">BOOK NOW</a></span>
+                <span ><a className="link" href="#">Home</a></span>
+                <span><a  className="link" href="#">Services</a></span>
+                <span><a  className="link" href="#">FAQ</a></span>
+                <span className=""><a className="btn" href="#">BOOK NOW</a></span>
             </div>
         </div>
     </nav>

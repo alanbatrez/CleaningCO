@@ -6,13 +6,13 @@
   overflow: hidden;
 }
 
-/* imagen como “fondo” real, no empuja layout */
+
 .bg-img{
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;        /* si ya lo tienes global, igual no estorba */
+  object-fit: cover;        
   object-position: 50% 90%; /* foco abajo */
   display: block;
 }
@@ -32,8 +32,8 @@
   z-index: 2;
 
   display: flex;
-  justify-content: center;  /* centro vertical */
-  align-items: center;      /* centro horizontal */
+  justify-content: center;  
+  align-items: center;     
   text-align: center;
 
   padding: 0 20px;          /* para móviles */
@@ -49,6 +49,8 @@
   font-size: 64px;
   line-height: 1.05;
   margin: 0 0 14px 0;
+  font-family: "Instrument Serif", serif;
+  letter-spacing: 2px;
 }
 
 .hero-text{
@@ -72,6 +74,10 @@
   font-weight: 700;
   display: inline-block;
   background-color: #937E7E;
+}
+
+.hero-btn:hover{
+  background-color: #7b746e;
 }
 
 .hero-btn--primary{
