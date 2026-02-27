@@ -1,0 +1,84 @@
+.hero-container{
+  width: 100%;
+  height: calc(100vh - 150px);
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+/* imagen como “fondo” real, no empuja layout */
+.bg-img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* si ya lo tienes global, igual no estorba */
+  object-position: 50% 90%; /* foco abajo */
+  display: block;
+}
+
+.overlay{
+  position: absolute;
+  inset: 0;
+  background-color: #100e0ea9;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* centra todo el contenido */
+.hero-content{
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;  /* centro vertical */
+  align-items: center;      /* centro horizontal */
+  text-align: center;
+
+  padding: 0 20px;          /* para móviles */
+  color: white;
+}
+
+/* limita el ancho para que se vea pro */
+.hero-inner{
+  max-width: 900px;
+}
+
+.hero-title{
+  font-size: 64px;
+  line-height: 1.05;
+  margin: 0 0 14px 0;
+}
+
+.hero-text{
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0 0 22px 0;
+  opacity: 0.95;
+}
+
+.hero-actions{
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-btn{
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  display: inline-block;
+  background-color: #937E7E;
+}
+
+.hero-btn--primary{
+  background: #ffffff;
+  color: #111;
+}
+
+.hero-btn--secondary{
+  background-color: #5D5353;
+}
