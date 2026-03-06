@@ -1,0 +1,55 @@
+.services {
+    background-color: #F3F1ED;
+}
+  
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid #937E7E;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.card-number {
+  font-family: "Instrument Serif", serif;
+  font-size: 3rem;
+  color: #937E7E;
+  font-weight: 500;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+ text-align: center;
+}

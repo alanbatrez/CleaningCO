@@ -51,6 +51,7 @@
   margin: 0 0 14px 0;
   font-family: "Instrument Serif", serif;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .hero-text{
@@ -58,6 +59,7 @@
   line-height: 1.5;
   margin: 0 0 22px 0;
   opacity: 0.95;
+  text-align: center;
 }
 
 .hero-actions{
@@ -87,4 +89,19 @@
 
 .hero-btn--secondary{
   background-color: #5D5353;
+}
+
+.p-border-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-border{
+  font-family: "Instrument Serif", serif;
+  font-size: 26px;
+  letter-spacing: 1px;
+  border: 1px solid #937E7E;
+  margin: 20px;
+  padding: 5px;
 }
