@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import "./services.css";
+import stars from "../assets/estrellas-14.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -32,7 +33,7 @@ function Services (){
             ease: "power2.out",
         });
 
-        gsap.from(".card-wrapper", {
+        gsap.from(".card-wrapper, .stars", {
             scrollTrigger: {
                 trigger: ".gallery",
                 start: "top 80%",
@@ -49,10 +50,13 @@ function Services (){
     return (
         <section className="services" ref={container}>
             <div className="p-border-wrapper">
-                <p className="p-border">Everyday Cleaning Reimagined</p>
+                <p className="p-border title">Everyday Cleaning Reimagined</p>
             </div>
             <h1 className="hero-title">Everything Clean, Everything Easy.</h1>
             <p className="hero-text">We provide cleaning with care and attention. Find the service that fits your space.</p>
+            <div className="stars-container">
+                <img src={stars} alt="Stars" className="stars" />
+            </div>
             <div className="gallery">
                 {servicesData.map((service, index) => (
                     <div className="card-wrapper" key={index} style={{ height: "100%" }}>

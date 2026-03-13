@@ -1,7 +1,11 @@
 .services {
     background-color: #F3F1ED;
 }
-  
+
+.p-border.title {
+    text-align: center;
+    margin-top: 5rem;
+}
 
 .gallery {
   display: grid;
@@ -52,4 +56,20 @@
   font-weight: 500;
   color: #333;
  text-align: center;
+}
+
+.stars-container {
+  width: 100%;
+  height: 100px;
+  position: relative;  
+}
+
+.stars {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  position: absolute;
+  z-index: 15;
+  right: 0;
+  padding-right: 2rem;
 }

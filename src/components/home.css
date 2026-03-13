@@ -1,6 +1,6 @@
 .hero-container{
   width: 100%;
-  height: calc(100vh - 150px);
+  height: 100vh;
   background: #000;
   position: relative;
   overflow: hidden;
