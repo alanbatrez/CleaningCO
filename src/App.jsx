@@ -7,6 +7,7 @@ import './App.css'
 import Services from "./components/services"
 import bannerBadge from './assets/banner-badge (1).png'
 import Discover from "./components/Discover"
+import Form from "./components/Form"
 
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -42,6 +43,7 @@ function App() {
       </div>
       <Services/>
       <Discover/>
+      <Form/>
     </>
   )
 }
